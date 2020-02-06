@@ -1,0 +1,86 @@
+{
+	"PARKINGLOT": {
+		"name": "Parking lot walk",
+		"desc": "You parked you car and are walking towards Assembly Hall to head in for a game.",
+		"exits": [
+			{
+				"exit": "SECURITYCHECK",
+				"target": "SECURITYCHECK"
+			}
+		]
+	}
+	,"SECURITYCHECK": {
+		"name": "Stadium security check",
+		"desc": "You walk in to the stadium and head through security. You have to use the restroom and buy food at the concession stand.",
+		"exits": [
+			{
+				"exit": "BATHROOM",
+				"target": "BATHROOM"
+			}, {
+				"exit": "CONCESSIONSTAND",
+				"target": "CONCESSIONSTAND"
+			}
+		]
+	}
+	,"BATHROOM": {
+		"name": "Using the bathroom",
+		"desc": "You had to use the bathroom incredibly bad so you sprinted there and dropped your keys on the stairs. Luckily you went back and found them. Then you ran back to the bathroom and used the toilet.",
+		"exits": [
+			{
+				"exit": "CONCESSIONSTAND",
+				"target": "CONCESSIONSTAND"
+			}
+		]
+	}
+	,"CONCESSIONSTAND": {
+		"name": "Buying Nachos",
+		"desc": "You looked around the menu at the concession stand thinking whether you should get nachos or popcorn. You eventually come to the conclusion to buy nachos.",
+		"exits": [
+			{
+				"exit": "BATHROOM",
+				"target": "BATHROOM"
+			},  {
+				"exit": "ITEMSHOP",
+				"target": "ITEMSHOP"
+			}
+		]
+	}
+	,"ITEMSHOP": {
+		"name": "Buying candy stripe pants",
+		"desc": "You wanted to go buy a pair of candy stripe pants to put on over your pants for the game, so you ",
+		"exits": [
+			{
+				"exit": "SEATS",
+				"target": "SEATS"
+			},  {
+				"exit": "LOCKERROOM",
+				"target": "LOCKERROOM"
+			}
+		]
+	}
+	,"LOCKERROOM": {
+		"name": "Locker room encounter",
+		"desc": "You have floor seats, so you were able to go into the locker room, and you really wanted a picture with yout favorite player.",
+		"exits": [
+			{
+				"exit": "PICTURE",
+				"target": "PICTURE"
+			}
+		]
+	}
+	,"PICTURE": {
+		"name": "Picture with Justin Smith",
+		"desc": "You got exactly what you wanted and got to meet Justin Smith, and you got a picture with him. Now time to get to the seats!",
+		"exits": [
+			{
+				"exit": "SEATS",
+				"target": "SEATS"
+			}
+		]
+	}
+	,"SEATS": {
+		"name": "Watching the game",
+		"desc": "You watched the game and IU won!",
+		"exits": []
+	}
+}
